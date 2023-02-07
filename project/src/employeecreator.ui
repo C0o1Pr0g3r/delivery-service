@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EmployeeCreator</class>
+ <widget class="QWidget" name="EmployeeCreator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>231</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Реєстрація співробітника</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="1">
+    <widget class="QPushButton" name="pbCancel">
+     <property name="text">
+      <string>Скасувати</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <layout class="QFormLayout" name="formLayout">
+     <property name="formAlignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="lLastname">
+       <property name="text">
+        <string>Прізвище</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lFistname">
+       <property name="text">
+        <string>Ім'я</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lPatronymic">
+       <property name="text">
+        <string>По батькові</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="lDOB">
+       <property name="text">
+        <string>Дата народження</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="lMob">
+       <property name="text">
+        <string>Мобильний телефон</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="lPost">
+       <property name="text">
+        <string>Посада</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="leLastname"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="leFirstname"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lePatronymic"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QDateEdit" name="deDOB"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="leMob">
+       <property name="inputMask">
+        <string>0000000000</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QComboBox" name="cmbPost"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="lOfc">
+       <property name="text">
+        <string>Відділення</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="cmbOfc"/>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="pbCreateEmployee">
+     <property name="text">
+      <string>Створити</string>
+     </property>
+     <property name="autoDefault">
+      <bool>true</bool>
+     </property>
+     <property name="default">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
